@@ -5,6 +5,10 @@ import { RouterLink } from "vue-router";
 <template>
   <div>
     <h2>Quote quiz</h2>
-    <RouterLink :to="{ name: 'questions' }">Start Quiz</RouterLink>
+    <div class="d-flex justify-content-center">
+      <RouterLink class="btn btn-primary" :to="{ name: 'questions' }">
+        Start Quiz
+      </RouterLink>
+    </div>
   </div>
 </template>

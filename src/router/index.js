@@ -16,8 +16,8 @@ const router = createRouter({
       component: QuestionsView,
     },
     {
-      path: "/result",
-      name: "result",
+      path: "/results",
+      name: "results",
       component: () => import("@/views/ResultView.vue"),
     },
   ],

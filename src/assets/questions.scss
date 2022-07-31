@@ -1,0 +1,9 @@
+.questions-grid {
+  display: grid;
+}
+
+@media (min-width: 1200px) {
+  .questions-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
