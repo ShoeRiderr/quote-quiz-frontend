@@ -4,6 +4,11 @@ This app use backend logic from [This project](https://github.com/ShoeRiderr/quo
 
 ## Project Setup
 
+First create .env file in root directory and copy .env.example content to it. File should look something like that
+```
+VITE_API_URL=http://127.0.0.1:8000
+```
+The url is where the backend project is running
 ```sh
 npm install
 ```
