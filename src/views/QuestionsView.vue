@@ -12,7 +12,7 @@ const store = quizStore();
 onMounted(() => {
   getAllWithAnswers()
     .then((response) => {
-      store.addQuestions(response.data);
+      store.setQuestions(response.data);
     })
     .catch(() => {
       notify({

@@ -5,7 +5,7 @@ export const quizStore = defineStore("quizStore", {
     questions: [],
   }),
   actions: {
-    addQuestions(questions) {
+    setQuestions(questions) {
       this.questions = questions.map((question) => {
         question["answer"] = "";
 

@@ -15,6 +15,14 @@ onMounted(() => {
     });
   }
 });
+
+function restart() {
+  store.setQuestions([]);
+
+  router.push({
+    name: "questions",
+  });
+}
 </script>
 
 <template>
@@ -26,6 +34,11 @@ onMounted(() => {
         :key="index"
         :question="question"
       />
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <button type="button" class="btn btn-success ml-auto" @click="restart">
+        Restart
+      </button>
     </div>
   </div>
 </template>
