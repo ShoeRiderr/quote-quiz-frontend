@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <h2>Quote quiz</h2>
+    <RouterLink :to="{ name: 'questions' }">Start Quiz</RouterLink>
+  </div>
 </template>
